@@ -11,7 +11,7 @@
         <div class="row justify-content-center">
             <ul class="nav nav-primary">
                 {{ range .Site.Menus.primary.ByWeight }}
-                <li class="nav-item">
+                <li class="nav-item justify-content-center mx-auto">
                     <a class="nav-link{{ if .Identifier }} text-{{ .Identifier }}{{ end }}" href="{{ .URL }}">
                         {{ .Pre }}
                         {{ .Name }}

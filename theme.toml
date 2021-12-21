@@ -1,17 +1,14 @@
-name = "Tanka"
+name = "kaslaanka"
 license = "GPL-v3"
 licenselink = "https://github.com/nanxstats/hugo-tanka/blob/master/LICENSE"
-description = "Tanka is a minimalist theme for Hugo"
+description = "kaslaanka is a fork of the theme tanka for Hugo"
 homepage = "https://github.com/nanxstats/hugo-tanka"
 tags = ["bootstrap", "minimalist", "responsive", "typography"]
 features = ["Blog", "Responsive", "Minimal", "Clean", "Simple", "Minimalist", "Bootstrap", "Fast"]
 min_version = "0.60.0"
 
 [author]
+    name = "Youssef Hesham"
+[original]
   name = "Nan Xiao"
   homepage = "https://nanx.me"
-
-[original]
-    author = "David Hamp-Gonsalves"
-    homepage = "https://www.davidhampgonsalves.com"
-    repo = "https://github.com/davidhampgonsalves/hugo-black-and-light-theme"
