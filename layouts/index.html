@@ -5,7 +5,10 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-sm-12 col-lg-8">
-
+                <div class="mx-0 md-md-4">
+                    {{ partial "face" .}}
+                </div>
+                <hr>
                 <div class="mx-0 mx-md-4 posts">
                     {{ range .Data.Pages.GroupByDate "2006" "desc"}}
                     {{ range sort .Pages "Date" "desc" }}
@@ -13,7 +16,6 @@
                     {{ end }}
                     {{ end }}
                 </div>
-
             </div>
         </div>
     </div>
