@@ -12,14 +12,18 @@
                     <div class="mx-0 mx-md-4 posts">
                         <h1>Blog</h1>
                         <hr>
+
                         <ul class="list-unstyled">
-                            {{ range .Data.Pages.GroupByDate "2006" "desc"}}
-                                <li class="groupby">{{ .Key }}</li>
-                                {{ range sort .Pages "Date" "desc" }}
-                                    {{ partial "list" . }}
-                                {{ end }}
+                            {{ range .Data.Pages.ByDate.Reverse }}
+                                <li>
+                                    <h2 class="meta-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                                    <div class="meta-date">
+                                        <time>{{ .Date.Format (.Site.Params.dateform | default "2006/01/02") }}</time>
+                                    </div>
+                                </li>
                             {{ end }}
                         </ul>
+
                     </div>
                 </div>
             </div>
