@@ -3,7 +3,7 @@
     {{ range $i, $p := .Data.Pages.ByDate.Reverse }}
         {{ if le $i  5 }}
         <li>
-            <h2 class="meta-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            <h4 class="meta-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
             <div class="meta-date">
                 <time>{{ .Date.Format (.Site.Params.dateform | default "2006/01/02") }}</time>
             </div>
