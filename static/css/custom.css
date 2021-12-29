@@ -211,13 +211,13 @@ hr {
 }
 
 .content .meta-title {
-    font-size: 1.5625rem;
+    /* font-size: 1.5625rem; */
     margin-bottom: 0.5rem;
 }
 
 .content .meta-title {
-    font-size: 1.5625rem;
-    font-weight: 600;
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 .content .meta-title a {
@@ -251,10 +251,8 @@ hr {
 }
 
 
-/* Gradient transparent - color - transparent */
-
-hr.style-two {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+footer {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 300;
 }
