@@ -1,1 +1,12 @@
+<ul class="list-unstyled">
+        <li>
 
+            {{ range .Site.Params.myprojects }}
+                <div class="meta-title">
+                    <a href="https://github.com/M1cR0xf7/{{ .name }}">{{ .name }}</a>:
+                        {{ .description }}
+                </div>
+            {{ end }}
+            </div>
+        </li>
+</ul>
