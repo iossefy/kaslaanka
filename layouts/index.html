@@ -10,47 +10,48 @@
                 </div>
                 <hr>
                 <div class="mx-0 mx-md-4 posts">
-                    <p>
-                        <h4 class="justify-content-center row col-auto">
+                    <span class="row">
+                        <h4 class="justify-content-center col-auto" style="margin-bottom: 0px;">
                             Recent articles
                         </h4>
-                    </p>
+                    </span>
                     {{ range .Data.Pages.GroupByDate "2006" "desc"}}
-                        {{ range sort .Pages "Date" "desc" }}
-                            {{ partial "list" . }}
-                        {{ end }}
+                    {{ range sort .Pages "Date" "desc" }}
+                    {{ partial "list" . }}
                     {{ end }}
-                    <p class="container">
+                    {{ end }}
+                    <div class="container">
                         <span class="justify-content-center row col-auto mx-0 md-md-4">
                             <a class="col-auto  justify-content-center" href="/blog/">
                                 More articles
                             </a>
                         </span>
-                    </p>
+                    </div>
                 </div>
-                <hr><br>
+                <hr>
+                <br>
                 <div class="mx-0 mx-md-4 posts">
-                    <p>
-                    <h4 class="justify-content-center row col-auto">
-                        Projects
-                    </h4>
-                    </p>
-                    {{ partial "projects" . }}
-                    <p class="container">
+                    <span class="row">
+                        <h4 class="justify-content-center col-auto" style="margin-bottom: 12px;">
+                            Projects
+                        </h4>
+                    </span>
+                    <div>
+                        {{ partial "projects" . }}
+                    </div>
+                    <div class="container">
                         <span class="justify-content-center row col-auto mx-0 md-md-4">
                             <a class="col-auto  justify-content-center" href="https://github.com/M1cR0xf7?tab=repositories">
                                 More projects
                             </a>
                         </span>
-                    </p>
+                    </div>
 
                     <hr>
                 </div>
-{{ partial "footer" . }}
+                {{ partial "footer" . }}
             </div>
         </div>
     </div>
 
-</div>
-
-{{ end }}
+    {{ end }}
