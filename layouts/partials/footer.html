@@ -1,1 +1,16 @@
 
+<!-- <script type="javascript"> -->
+<!--     document.getElementById("year").innerHTML = new Date().getFullYear(); -->
+<!-- </script> -->
+
+ <!-- build once every year at least  -->
+ <!-- or use javascript... no -->
+<div class="container">
+    <p class="row justify-content-center meta" id="footer">
+    Copyright ©
+     <!-- <span class="col-auto justify-content-center meta" id="footer" style="white-space:nowrap"> -->
+        {{ now.Year }}
+     <!-- </span> -->
+     {{ .Site.Params.copyrights }}
+    </p>
+</div>

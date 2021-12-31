@@ -2,7 +2,7 @@
     <li>
         {{ range .Site.Params.myprojects }}
         <div class="meta-title">
-            <a href="https://github.com/M1cR0xf7/{{ .name }}">{{ .name }}</a>:
+            <a href="{{ .url }}">{{ .name }}</a>:
             {{ .description }}
         </div>
         {{ end }}
