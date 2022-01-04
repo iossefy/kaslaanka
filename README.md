@@ -13,6 +13,7 @@ fork of the [Hugo-tanka](https://github.com/nanxstats/hugo-tanka) theme
 
 - brief about me on the home page
 
+
 ### config.yml changes
 ```yaml
 params:
@@ -32,4 +33,16 @@ params:
 
   # a brief about me
   brief_about: hello there, its me <i>joe<i>.
+```
+
+### posts
+
+you can make a post unlisted by adding
+
+```markdown
+---.
+...
+unlisted: true
+...
+---
 ```

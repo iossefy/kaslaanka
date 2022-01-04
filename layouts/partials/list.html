@@ -1,6 +1,6 @@
 
 <ul class="list-unstyled">
-    {{ range $i, $p := .Data.Pages.ByDate.Reverse }}
+    {{ range $i, $p := (where .Data.Pages.ByDate.Reverse ".Params.unlisted" "!=" "true") }}
     {{ if le $i  5 }}
     <li>
         <h4 class="meta-title">

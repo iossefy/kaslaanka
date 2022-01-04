@@ -14,7 +14,7 @@
                     <hr>
 
                     <ul class="list-unstyled">
-                        {{ range .Data.Pages.ByDate.Reverse }}
+                        {{ range (where .Data.Pages.ByDate.Reverse ".Params.unlisted" "!=" "true") }}
                         <li>
                             <h2 class="meta-title">
                                 <a href="{{ .Permalink }}">{{ .Title }}</a>
