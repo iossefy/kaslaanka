@@ -16,7 +16,12 @@ fork of the [Hugo-tanka](https://github.com/nanxstats/hugo-tanka) theme
 ### config.yml changes
 ```yaml
 params:
+  # it will produce: copyrights (c) 2022 joe
   copytights: joe
+  # path to the favicon directory
+  # see ./layouts/_defaults/baseof.html line #30 to line #37
+  faviconpath: "/img/favicon"
+  # projects will show in the index page
   myprojects:
     - name: AAAAA
       description: BBBBBBB
