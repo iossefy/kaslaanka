@@ -29,7 +29,7 @@
                     </div>
                 </div>
                 <hr>
-                <br>
+                {{ if .Site.Params.myprojects }}
                 <div class="mx-0 mx-md-4 posts">
                     <span class="row">
                         <h4 class="justify-content-center col-auto">
@@ -46,9 +46,9 @@
                             </a>
                         </span>
                     </div>
-
                     <hr>
                 </div>
+                {{ end }}
                 {{ partial "footer" . }}
             </div>
         </div>
