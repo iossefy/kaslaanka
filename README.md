@@ -37,12 +37,12 @@ params:
 
 ### posts
 
-you can make a post unlisted by adding
+you can make a post unlisted by adding the following
 
 ```markdown
----.
-...
+---
+
 unlisted: true
-...
+
 ---
 ```
