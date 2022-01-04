@@ -13,6 +13,7 @@ fork of the [Hugo-tanka](https://github.com/nanxstats/hugo-tanka) theme
 
 - brief about me on the home page
 
+- support unlisted articles
 
 ### config.yml changes
 ```yaml
