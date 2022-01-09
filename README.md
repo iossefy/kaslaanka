@@ -55,7 +55,7 @@ you can make a post unlisted by adding the following
 unlisted: true
 
 ---
-``
+```
 
 ### LICENSE
 GPL-3.0 [LICENSE](./LICENSE).
