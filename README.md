@@ -1,9 +1,16 @@
 # Kaslaanka
-fork of the [Hugo-tanka](https://github.com/nanxstats/hugo-tanka) theme
+
+A minimalist theme for Hugo.
+
+this theme is a fork of [Hugo-tanka](https://github.com/nanxstats/hugo-tanka) theme.
 
 ## new features
 
-- bootstrap 5: updated to bootstrap 5
+- remove the bloat (utterances comments, progressivly, highlight.js)
+
+- scriptless by default
+
+- updated to bootstrap 5 (might get rid of bootstrap completely *TODO*: later...)
 
 - minor UI changes
 
@@ -14,6 +21,8 @@ fork of the [Hugo-tanka](https://github.com/nanxstats/hugo-tanka) theme
 - brief about me on the home page
 
 - support unlisted articles
+
+- better favicons
 
 ### config.yml changes
 ```yaml
@@ -46,4 +55,7 @@ you can make a post unlisted by adding the following
 unlisted: true
 
 ---
-```
+``
+
+### LICENSE
+GPL-3.0 [LICENSE](./LICENSE).
