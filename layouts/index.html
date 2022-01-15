@@ -1,6 +1,5 @@
 {{ define "main" }}
 {{ partial "header" . }}
-
 <div class="content">
     <div class="container">
         <div class="row justify-content-center">
@@ -39,13 +38,16 @@
                     <div>
                         {{ partial "projects" . }}
                     </div>
+
+                    {{ if .Site.Params.projectsURL}}
                     <div class="container">
                         <span class="justify-content-center row col-auto mx-0 md-md-4">
-                            <a class="col-auto  justify-content-center" href="https://github.com/M1cR0xf7?tab=repositories">
+                            <a class="col-auto justify-content-center" href="{{ .Site.Params.projectsURL }}">
                                 More projects
                             </a>
                         </span>
                     </div>
+                    {{ end }}
                     <hr>
                 </div>
                 {{ end }}
@@ -53,5 +55,4 @@
             </div>
         </div>
     </div>
-
     {{ end }}
