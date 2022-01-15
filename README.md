@@ -43,7 +43,7 @@ params:
   # link to more projects
   # show your github repositories as example
   # or create your own page.
-  projectURL: https://github.com/<username>?tab=repositories
+  projectsURL: https://github.com/<username>?tab=repositories
 
   # a brief about me
   brief_about: hello there, its me <i>joe<i>.
