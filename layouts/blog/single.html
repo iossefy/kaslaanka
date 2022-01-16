@@ -1,12 +1,10 @@
 {{ define "main" }}
 {{ partial "header" . }}
-
 <div class="content">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-sm-12 col-lg-8">
                 <h1 class="mx-0 mx-md-4 blog-post-title">{{ .Title }}</h1>
-
                 <div class="mb-md-4 meta">
                     {{ if not .Params.noauthor }}
                     {{ if .Params.author }}
@@ -15,15 +13,12 @@
                     </span>
                     {{ end }}
                     {{ end }}
-
                     <span class="date middot" title='{{ .Date.Format "Mon Jan 2 2006 15:04:05 MST" }}'>
                         {{ .Date.Format (.Site.Params.dateform | default "2006-01-02") }}
                     </span>
-
                     <span class="reading-time middot">
                         {{ .ReadingTime }} min read
                     </span>
-
                     <div class="d-none d-md-inline tags">
                         <ul class="list-unstyled d-inline">
                             {{ range .Params.tags }}
@@ -34,11 +29,9 @@
                         </ul>
                     </div>
                 </div>
-
                 <div class="markdown blog-post-content">
                     {{ partial "content" . }}
                 </div>
-
                 {{ if .Site.Params.posts_navigation }}
                 <div class="navigation">
                     <div class="row">
@@ -60,11 +53,8 @@
                 </div>
                 {{ end }}
             </div>
-
             {{ partial "footer" . }}
         </div>
     </div>
-
 </div>
-
 {{ end }}

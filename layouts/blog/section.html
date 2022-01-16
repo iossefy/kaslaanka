@@ -1,6 +1,5 @@
 {{ define "main" }}
 {{ partial "header" . }}
-
 <div class="content">
     <div class="container">
         <div class="row justify-content-center">
@@ -8,11 +7,9 @@
                 <div class="markdown">
                     {{ partial "content" . }}
                 </div>
-
                 <div class="mx-0 mx-md-4 posts">
                     <h1>Blog</h1>
                     <hr>
-
                     <ul class="list-unstyled">
                         {{ range (where .Data.Pages.ByDate.Reverse ".Params.unlisted" "!=" "true") }}
                         <li>
@@ -25,12 +22,10 @@
                         </li>
                         {{ end }}
                     </ul>
-
                 </div>
             </div>
         </div>
         {{ partial "footer" . }}
     </div>
 </div>
-
 {{ end }}
