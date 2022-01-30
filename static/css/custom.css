@@ -4,6 +4,7 @@ body {
     font-family: Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-feature-settings: "liga", "kern";
     background-color: #fff;
+	/* font-size: 14px; */
 }
 
 /* Fix jumping scrollbar when switching to long pages */
@@ -124,12 +125,25 @@ hr {
     margin-right: 1.5rem;
 }
 
+
+.single-page-title {
+    font-size: 1.8rem;
+    line-height: 2.625rem;
+	font-weight: 400 !important;
+	text-transform: uppercase;
+}
+
+
 /* blog post typography */
 
 .content .blog-post-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 2.625rem;
+	font-weight: 400 !important;
+	text-transform: uppercase;
 }
+
+
 
 .content .blog-post-content {
     font-size: 1.0625rem;
@@ -211,7 +225,7 @@ hr {
 }
 
 .content .meta-title {
-    /* font-size: 1.5625rem; */
+    font-size: 1.5625rem;
     margin-bottom: 0.5rem;
 }
 
