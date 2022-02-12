@@ -8,21 +8,21 @@ this theme is a fork of [Hugo-tanka](https://github.com/nanxstats/hugo-tanka) th
 
 - remove the bloat (utterances comments, progressivly, highlight.js)
 
-- scriptless by default
+- scriptless by default.
 
-- updated to bootstrap 5 (might get rid of bootstrap completely *TODO*: later...)
+- removed bootstrap completely. [see here](/commit/7a33f88387150c0d483c289086001f7d4f776706).
 
-- minor UI changes
+- changed how the index, single pages and blog posts look.
 
 - blog list on the home page is limited, if the users want to see more they go to /blog/
 
-- listing projects on the home page
+- listing projects on the home page.
 
-- brief about me on the home page
+- brief about me on the home page.
 
-- support unlisted articles
+- support unlisted articles.
 
-- better favicons
+- better favicons.
 
 ### config.yml changes
 ```yaml
