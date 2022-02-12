@@ -971,3 +971,15 @@ ul li {
 	color: #000;
 	border: 2px solid #555555;
 }
+
+/* table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
