@@ -10,7 +10,7 @@ this theme is a fork of [Hugo-tanka](https://github.com/nanxstats/hugo-tanka) th
 
 - scriptless by default.
 
-- removed bootstrap completely. [see here](/commit/7a33f88387150c0d483c289086001f7d4f776706).
+- removed bootstrap completely. [see here](https://github.com/M1cR0xf7/kaslaanka/commit/7a33f88387150c0d483c289086001f7d4f776706).
 
 - changed how the index, single pages and blog posts look.
 
