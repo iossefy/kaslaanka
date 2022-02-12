@@ -1,26 +1,27 @@
 <div class="mt-xl header">
-    <header>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-auto">
-                    <a href="{{ .Site.BaseURL }}">
-                        <h1 class="name">{{ .Site.Params.sitename }}</h1>
-                    </a>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <ul class="nav nav-primary">
-                    {{ range .Site.Menus.primary.ByWeight }}
-                    <li class="nav-item justify-content-center mx-auto"> <!--FUCKING HELL-->
-                        <a class="nav-link{{ if .Identifier }} text-{{ .Identifier }}{{ end }}" href="{{ .URL }}">
-                            {{ .Pre }}
-                            {{ .Name }}
-                        </a>
-                    </li>
-                    {{ end }}
-                </ul>
-            </div>
-        </div>
-    </header>
+  <header>
+	<div class="container">
+	  <div class="row justify-content-center">
+		<div class="col-auto">
+		  <a href="{{ .Site.BaseURL }}" style="display: contents">
+			<h1 class="name text-center">{{ .Site.Params.sitename }}</h1>
+		  </a>
+		</div>
+	  </div>
+	  <div class="row justify-content-center">
+		<section class="nav  justify-content-center">
+		  <ul>
+			{{ range .Site.Menus.primary.ByWeight }}
+			<li class="nav-item justify-content-center mx-auto"> <!--FUCKING HELL-->
+			  <a class="nav-link{{ if .Identifier }} text-{{ .Identifier }}{{ end }}" href="{{ .URL }}">
+				{{ .Pre }}
+				{{ .Name }}
+			  </a>
+			</li>
+			{{ end }}
+		  </ul>
+		</section>
+	  </div>
+	</div>
+  </header>
 </div>

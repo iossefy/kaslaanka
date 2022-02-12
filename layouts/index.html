@@ -4,15 +4,14 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-sm-12 col-lg-8">
-                <div class="mx-0 md-md-4">
+                <div class="mx-0">
                     {{ partial "face" .}}
                 </div>
                 <hr>
-                <div class="mx-0 mx-md-4 posts">
+                <div class="mx-0 chunk-sm posts">
                     <span class="row">
-                        <h4 class="justify-content-center col-auto" style="margin-bottom: 0px;">
-                            Recent articles
-                        </h4>
+                        <h4 class="justify-content-center some-weight col-auto" style="margin-bottom: 0px;">
+                            Recent articles</h4>
                     </span>
                     {{ range .Data.Pages.GroupByDate "2006" "desc"}}
                     {{ range sort .Pages "Date" "desc" }}
@@ -20,8 +19,8 @@
                     {{ end }}
                     {{ end }}
                     <div class="container">
-                        <span class="justify-content-center row col-auto mx-0 md-md-4">
-                            <a class="col-auto  justify-content-center" href="/blog/">
+                        <span class="justify-content-center row col-auto mx-0 chunk-sm">
+                            <a class="col-auto more-links justify-content-center text-center" href="/blog/">
                                 More articles
                             </a>
                         </span>
@@ -29,11 +28,9 @@
                 </div>
                 <hr>
                 {{ if .Site.Params.myprojects }}
-                <div class="mx-0 mx-md-4 posts">
+                <div class="chunk-sm posts">
                     <span class="row">
-                        <h4 class="justify-content-center col-auto">
-                            Projects
-                        </h4>
+                        <h4 class="justify-content-center some-weight col-auto" style="margin-bottom: 1rem">Projects</h4>
                     </span>
                     <div>
                         {{ partial "projects" . }}
@@ -41,8 +38,8 @@
 
                     {{ if .Site.Params.projectsURL}}
                     <div class="container">
-                        <span class="justify-content-center row col-auto mx-0 md-md-4">
-                            <a class="col-auto justify-content-center" href="{{ .Site.Params.projectsURL }}">
+                        <span class="justify-content-center row col-auto mx-0 chunk-sm"  style="padding-top: 1.2rem">
+                            <a class="col-auto more-links justify-content-center text-center" href="{{ .Site.Params.projectsURL }}">
                                 More projects
                             </a>
                         </span>
