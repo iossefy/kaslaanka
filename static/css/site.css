@@ -912,3 +912,15 @@ ul li {
 	}
 }
 
+/* alerts */
+.alert {
+  padding: 20px;
+  color: white;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+.alert-info     { background-color: #2196F3; }
+.alert-warning  { background-color: #ff9800; }
+.alert-success  { background-color: #04AA6D; }
+.alert-danger   { background-color: #f44336; }
