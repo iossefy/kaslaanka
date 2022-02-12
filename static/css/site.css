@@ -895,27 +895,27 @@ ul li {
 
 
 
-@media (prefers-color-scheme: dark) {
-	* {
-		color: #FDFDFD;
-	}
+/* @media (prefers-color-scheme: dark) { */
+/*     * { */
+/*         color: #FDFDFD; */
+/*     } */
 
-	body {
-		background: #121212;
-	}
+/*     body { */
+/*         background: #121212; */
+/*     } */
 
-	pre, code {
-		background-color: #262626;
-	}
+/*     pre, code { */
+/*         background-color: #262626; */
+/*     } */
 
-	#sub-header, .date {
-		color: #BABABA;
-	}
+/*     #sub-header, .date { */
+/*         color: #BABABA; */
+/*     } */
 
-	hr {
-		background: #EBEBEB;
-	}
-}
+/*     hr { */
+/*         background: #EBEBEB; */
+/*     } */
+/* } */
 
 /* alerts */
 .alert {
