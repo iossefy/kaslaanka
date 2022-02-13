@@ -8,15 +8,15 @@
                 <div class="meta-data meta">
                     {{ if not .Params.noauthor }}
                     {{ if .Params.author }}
-                    <span class="author" title="{{ .Params.Author }}">
+                    <span class="author meta-data" title="{{ .Params.Author }}">
                         {{ .Params.author }}
                     </span>
                     {{ end }}
                     {{ end }}
-                    <span class="date middot" title='{{ .Date.Format "Mon Jan 2 2006 15:04:05 MST" }}'>
+                    <span class="date middot meta-data" title='{{ .Date.Format "Mon Jan 2 2006 15:04:05 MST" }}'>
                         {{ .Date.Format (.Site.Params.dateform | default "2006-01-02") }}
                     </span>
-                    <span class="reading-time middot">
+                    <span class="reading-time middot meta-data">
                         {{ .ReadingTime }} min read
                     </span>
                     <div class="d-none d-md-inline tags">

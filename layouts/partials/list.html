@@ -7,7 +7,7 @@
             <a href="{{ .Permalink }}">{{ .Title }}</a>
         </h4>
         <div class="meta-date">
-            <time>{{ .Date.Format (.Site.Params.dateform | default "2006/01/02") }}</time>
+            <time class="meta-data">{{ .Date.Format (.Site.Params.dateform | default "2006/01/02") }}</time>
         </div>
     </li>
     {{ end }}
