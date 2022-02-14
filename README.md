@@ -1,6 +1,6 @@
 # Kaslaanka
 
-A minimalist theme for Hugo. __** Under Development **__
+A minimalist theme for Hugo.
 
 this theme is a fork of [Hugo-tanka](https://github.com/nanxstats/hugo-tanka) theme.
 
