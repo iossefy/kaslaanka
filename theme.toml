@@ -1,14 +1,15 @@
 name = "kaslaanka"
 license = "GPL-v3"
 licenselink = "https://github.com/M1cR0xf7/kaslaanka/blob/master/LICENSE"
-description = "kaslaanka is a fork of the theme tanka for Hugo"
+description = "kaslaanka is a minimalist theme for Hugo"
 homepage = "https://github.com/M1cR0xf7/kaslaanka"
-tags = ["bootstrap", "minimalist", "responsive", "typography"]
-features = ["Blog", "Responsive", "Minimal", "Clean", "Simple", "Minimalist", "Bootstrap", "Fast"]
+tags = ["minimalist", "responsive", "typography", "customizable", "scriptless"]
+features = ["Blog", "Responsive", "Minimal", "Clean", "Simple", "Minimalist", "Fast"]
 min_version = "0.77.0"
 
 [author]
     name = "Youssef Hesham"
+
 [original]
   name = "Nan Xiao"
   homepage = "https://nanx.me"

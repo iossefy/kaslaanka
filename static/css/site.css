@@ -277,9 +277,6 @@ footer {
 	font-weight: 300;
 }
 
-/* drop bootstrap */
-
-
 *::before,
 *::after {
 	box-sizing: border-box;
