@@ -24,6 +24,18 @@ this theme is a fork of [Hugo-tanka](https://github.com/nanxstats/hugo-tanka) th
 
 - better favicons.
 
+- **HUGE** first letter paragraph (if you want)
+
+### custom.css
+
+```css
+/* <span class="first-letter">H</span>ello World! */
+.first-letter {
+	font-family: "Roboto Serif";
+}
+```
+
+
 ### config.yml changes
 ```yaml
 params:

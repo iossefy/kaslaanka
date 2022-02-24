@@ -277,6 +277,13 @@ footer {
 	font-weight: 300;
 }
 
+.first-letter {
+	font-size: 3rem;
+	line-height: 4rem;
+	font-weight: 400;
+}
+
+
 *::before,
 *::after {
 	box-sizing: border-box;
