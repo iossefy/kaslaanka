@@ -24,6 +24,8 @@ this theme is a fork of [Hugo-tanka](https://github.com/nanxstats/hugo-tanka) th
 
 - better favicons.
 
+- better tags
+
 - **HUGE** first letter paragraph (if you want)
 
 ### custom.css
@@ -35,6 +37,15 @@ this theme is a fork of [Hugo-tanka](https://github.com/nanxstats/hugo-tanka) th
 }
 ```
 
+### Tags
+
+```
+tags:
+  - hello
+  - ok
+```
+
+this post will be listed at /tags/hello/ and /tags/ok/
 
 ### config.yml changes
 ```yaml
