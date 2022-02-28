@@ -19,6 +19,7 @@
 			  </a>
 			</li>
 			{{ end }}
+			{{ if gt .Site.Languages 1 }}{{ partial "listlanguages" .}}{{end}}
 		  </ul>
 		</section>
 	  </div>

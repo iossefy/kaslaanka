@@ -26,6 +26,8 @@ this theme is a fork of [Hugo-tanka](https://github.com/nanxstats/hugo-tanka) th
 
 - better tags
 
+- add multiple languages support
+
 - **HUGE** first letter paragraph (if you want)
 
 ### custom.css
@@ -39,7 +41,7 @@ this theme is a fork of [Hugo-tanka](https://github.com/nanxstats/hugo-tanka) th
 
 ### Tags
 
-```
+```yaml
 tags:
   - hello
   - ok
@@ -49,6 +51,17 @@ this post will be listed at /tags/hello/ and /tags/ok/
 
 ### config.yml changes
 ```yaml
+
+# You can add languages!
+# do not expect it to work out of the box
+# https://gohugo.io/content-management/multilingual/
+languages:
+  en:
+    LanguageName: English
+  ru:
+    LanguageName: русский
+    contentDir: content/blog/ru
+
 params:
   # it will produce: copyrights (c) 2022 joe
   copytights: joe
