@@ -13,6 +13,11 @@
 			<h4 class="justify-content-center some-weight col-auto" style="margin-bottom: 0px;">
 			  Recent articles</h4>
 		  </span>
+		  <!-- a work-around for a problem i don't know what causes it -->
+		  {{ $lang := index ($.Site.Home.AllTranslations) 1}}
+		  {{ if ne $lang.Language .Language }}
+		  <ul></ul><ul></ul>
+		  {{ end }}
 		  {{ range .Data.Pages.GroupByDate "2006" "desc"}}
 		  {{ range sort .Pages "Date" "desc" }}
 		  {{ partial "list" . }}
