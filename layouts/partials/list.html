@@ -2,7 +2,7 @@
 <ul class="list-unstyled">
   {{ range $i, $p := (where .Data.Pages.ByDate.Reverse ".Params.unlisted" "!=" "true") }}
   {{ if le $i  5 }}
-  <li>
+  <li class="recent-articles">
 	<h4 class="meta-title">
 	  <a href="{{ .Permalink }}">{{ .Title }}</a>
 	</h4>
