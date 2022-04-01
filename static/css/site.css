@@ -19,6 +19,13 @@ strong {
 	font-weight: bolder;
 }
 
+small, .small {
+  font-size: 0.875em;
+}
+
+em, i {
+	font-style: italic;
+}
 
 
 /* margin top */
