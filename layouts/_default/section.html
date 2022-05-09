@@ -10,7 +10,6 @@
 		</div>
 
 		<div class="mx-0 mx-md-4 posts">
-		  <h1>Sections</h1>
 		  <ul>
 			{{ range sort .Pages "Title" "asc" }}
 			<li>
@@ -23,8 +22,9 @@
 		</div>
 	  </div>
 	</div>
+
+{{ partial "footer" . }}
   </div>
 </div>
 
-{{ partial "footer" . }}
 {{ end }}
