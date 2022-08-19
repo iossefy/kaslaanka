@@ -38,7 +38,17 @@ add your custom javascript here `/static/js/custom.js`
 for(;;){alert("HAHAHAHAHAH")}
 ```
 
-### Tags
+### external scripts
+you can add external scripts in `/layouts/partials/scripts.html`
+
+```html
+<script src="..." ... ></script>
+```
+
+### meta & link tags
+you can add as much `<meta>` and `<link>` as you like in `/layouts/partials/meta.html`
+
+### tags
 
 ```yaml
 tags:
@@ -112,12 +122,6 @@ you can make a post unlisted by adding the following
 unlisted: true
 
 ---
-```
-### external scripts
-you can add external scripts in `/layouts/partials/scripts.html`
-
-```html
-<script src="..." ... ></script>
 ```
 
 ### LICENSE
