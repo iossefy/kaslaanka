@@ -48,8 +48,23 @@ tags:
 
 this post will be listed at /tags/hello/ and /tags/ok/
 
-### config.yml changes
+### config.yml
 ```yaml
+
+sitename: "Site Name!"
+
+# Links of the navbar
+menu:
+  primary:
+    - name: Home
+      url: /
+      weight: 1
+    - name: About me
+      url: /aboutme
+      weight: 2
+    - name: Subscribe
+      url: /index.xml
+      weight: 3
 
 # You can add languages!
 # do not expect it to work out of the box
@@ -82,6 +97,9 @@ params:
 
   # a brief about me
   brief_about: hello there, its me <i>joe<i>.
+
+# and don't forget
+theme: kaslaanka
 ```
 
 ### posts
