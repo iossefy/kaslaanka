@@ -6,37 +6,36 @@ this theme is a fork of [Hugo-tanka](https://github.com/nanxstats/hugo-tanka) th
 
 ## new features
 
-- remove the bloat (utterances comments, progressivly, highlight.js)
-
-- scriptless by default.
-
-- removed bootstrap completely. [see here](https://github.com/M1cR0xf7/kaslaanka/commit/7a33f88387150c0d483c289086001f7d4f776706).
-
-- changed how the index, single pages and blog posts look.
-
-- blog list on the home page is limited, if the users want to see more they go to /blog/
-
-- listing projects on the home page.
-
-- brief about me on the home page.
-
-- support unlisted articles.
-
-- better favicons.
-
-- better tags
-
-- add multiple languages support
-
-- **HUGE** first letter paragraph (if you want)
+* remove the bloat (utterances comments, progressivly, highlight.js)
+* scriptless by default.
+* removed bootstrap.
+* changed how the index, single pages and blog posts look.
+* blog list on the home page is limited, if the users want to see more they go to /blog/
+* listing projects on the home page.
+* brief about me on the home page.
+* support unlisted articles.
+* better favicons.
+* better tags
+* add multiple languages support
+* **HUGE** first letter paragraph (if you want)
 
 ### custom.css
+
+add your custom css here `/static/css/custom.css`
 
 ```css
 /* <span class="first-letter">H</span>ello World! */
 .first-letter {
 	font-family: "Roboto Serif";
 }
+```
+
+### custom.js
+add your custom javascript here `/static/js/custom.js`
+
+```js
+// be creative
+for(;;){alert("HAHAHAHAHAH")}
 ```
 
 ### Tags
@@ -95,6 +94,12 @@ you can make a post unlisted by adding the following
 unlisted: true
 
 ---
+```
+### external scripts
+you can add external scripts in `/layouts/partials/scripts.html`
+
+```html
+<script src="..." ... ></script>
 ```
 
 ### LICENSE
