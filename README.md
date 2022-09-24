@@ -3,6 +3,8 @@
 A minimalist theme for Hugo.
 
 this theme is a fork of [Hugo-tanka](https://github.com/nanxstats/hugo-tanka) theme.
+this theme is a "do it your self" theme, you probably want to change the css to make it your taste.
+use `custom.css` to do it.
 
 ## new features
 
