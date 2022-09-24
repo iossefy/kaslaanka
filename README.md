@@ -8,18 +8,19 @@ use `custom.css` to do it.
 
 ## new features
 
-* remove the bloat (utterances comments, progressivly, highlight.js)
-* scriptless by default.
-* removed bootstrap.
-* changed how the index, single pages and blog posts look.
-* blog list on the home page is limited, if the users want to see more they go to /blog/
-* listing projects on the home page.
-* brief about me on the home page.
-* support unlisted articles.
-* better favicons.
-* better tags
-* add multiple languages support
-* **HUGE** first letter paragraph (if you want)
+- remove the bloat (utterances comments, progressivly, highlight.js)
+- scriptless by default.
+- removed bootstrap.
+- changed how the index, single pages and blog posts look.
+- blog list on the home page is limited, if the users want to see more they go to /blog/
+- listing projects on the home page.
+- brief about me on the home page.
+- support unlisted articles.
+- better favicons.
+- better tags
+- add multiple languages support
+- **HUGE** first letter paragraph (if you want)
+- Brief description under blog post title
 
 ### custom.css
 
@@ -122,6 +123,16 @@ you can make a post unlisted by adding the following
 ---
 
 unlisted: true
+
+---
+```
+
+add a brief description to a single blog page.
+
+```markdown
+---
+
+brief: "This is my demo brief!"
 
 ---
 ```

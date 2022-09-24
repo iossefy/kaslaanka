@@ -102,6 +102,10 @@ hr {
 	margin-bottom: 10px;
 }
 
+.content .meta-brief {
+    color: #929AAB;
+}
+
 .content .meta a {
 	text-decoration: none;
 }
