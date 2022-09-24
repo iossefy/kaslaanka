@@ -935,6 +935,8 @@ ul li {
 .alert-warning  { background-color: #ff9800; }
 .alert-success  { background-color: #04AA6D; }
 .alert-danger   { background-color: #f44336; }
+.alert-dark     { background-color: #555555; }
+.alert-outline  { border: 3px solid #555555; }
 
 /* buttons */
 .btn{
