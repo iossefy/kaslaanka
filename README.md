@@ -7,6 +7,8 @@ this theme is a fork of [Hugo-tanka](https://github.com/nanxstats/hugo-tanka) th
 this theme is a "do it yourself" theme, you probably want to change the css to make it your taste,
 use `custom.css` to do it.
 
+__**Live**__ Demo at: [m1cr0xf7.github.io/kaslaanka](https://m1cr0xf7.github.io/kaslaanka/)
+
 ## new features
 
 - remove the bloat (utterances comments, progressivly, highlight.js)
