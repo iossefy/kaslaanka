@@ -940,10 +940,13 @@ ul li {
 .alert-success  { background-color: #04AA6D; }
 .alert-danger   { background-color: #f44336; }
 .alert-dark     { background-color: #555555; }
-.alert-outline  { border: 3px solid #555555; }
+.alert-outline  {
+    border: 3px solid #333;
+    color: black;
+}
 
 /* buttons */
-.btn{
+.btn {
 	border: none;
 	color: #fff;
 	padding: 15px 32px;
