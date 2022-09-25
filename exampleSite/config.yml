@@ -49,12 +49,12 @@ params:
 #  faviconpath: "/img/favicon"
   # projects will show in the index page
   myprojects:
-    - name: AAAAA
-      description: BBBBBBB
+    - name: "Totally Awesome Project"
+      description: "Machine Learning Magic!!!"
       url: https://example.com
-    - name: XXXXXXXXXXXXXXX
-      description: YYYYYYYYYYYYYYYYYYY
-      url: https://example.com
+    - name: "Kaslaanka"
+      description: "The best hugo theme ever!!!"
+      url: https://github.com/M1cR0xf7/kaslaanka
   # link to more projects
   # show your github repositories as example
   # or create your own page.
