@@ -3,7 +3,11 @@
 <ul>
   {{ range $i := $.Site.Home.AllTranslations }}
   {{ if ne $.Site.Language $i.Language }}
-  <li><a href="{{ $i.Permalink }}">{{ $i.Language.LanguageName }}</a></li>
+  <li class="nav-item justify-content-center mx-auto">
+    <a class="nav-link" href="{{ $i.Permalink }}">
+      {{ $i.Language.LanguageName }}
+    </a>
+  </li>
   {{end}}
   {{ end }}
 </ul>
