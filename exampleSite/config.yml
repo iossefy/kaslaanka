@@ -21,7 +21,7 @@ menu:
     - name: Home
       url: /
       weight: 1
-    - name: About me
+    - name: About
       url: /about
       weight: 2
     - name: Subscribe
