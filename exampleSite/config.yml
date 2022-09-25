@@ -1,0 +1,68 @@
+sitename: "Site Name!"
+baseURL: "/"
+languageCode: en-us
+title: "Kaslaanka Theme"
+author: m1cr0xf7
+
+enableEmoji: true
+hasCJKLanguage: false
+pygmentsstyle: "tango"
+pygmentscodefences: true
+
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+# Links of the navbar
+menu:
+  primary:
+    - name: Home
+      url: /
+      weight: 1
+    - name: About me
+      url: /about
+      weight: 2
+    - name: Subscribe
+      url: /index.xml
+      weight: 3
+
+# You can add languages!
+# do not expect it to work out of the box
+# https://gohugo.io/content-management/multilingual/
+defaultContentLanguage: en
+languages:
+  en:
+    LanguageName: English
+    # contentDir: content/blog/en
+  ru:
+    LanguageName: русский
+    # contentDir: content/blog/
+
+params:
+  sitename: "Kaslaanka Theme"
+  # it will produce: copyrights (c) 2022 joe
+  copyrights: John Doe
+  # path to the favicon directory
+  # see ./layouts/_defaults/baseof.html line #30 to line #37
+#  faviconpath: "/img/favicon"
+  # projects will show in the index page
+  myprojects:
+    - name: AAAAA
+      description: BBBBBBB
+      url: https://example.com
+    - name: XXXXXXXXXXXXXXX
+      description: YYYYYYYYYYYYYYYYYYY
+      url: https://example.com
+  # link to more projects
+  # show your github repositories as example
+  # or create your own page.
+  projectsURL: https://example.com
+
+  # a brief about me
+  brief_about: <center>Kaslaanka theme demo made with ❤️️</center>
+
+# and don't forget
+theme: kaslaanka
+

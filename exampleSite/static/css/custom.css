@@ -1,0 +1,41 @@
+/* your css here */
+
+body {
+	/* font-family: 'Open Sans'; */
+	font-family: sans-serif;
+}
+
+.first-letter {
+	font-family: "Noto Serif Display";
+	font-size: 4rem;
+	float: left;
+}
+
+.content .blog-post-title {
+    font-weight: 600 !important;
+}
+
+
+ul li {
+	margin-left: 0rem;
+}
+
+.nav li {
+    padding: 0 1rem 0 1rem;
+}
+
+
+.markdown.page-content {
+	font-size: 1.0625rem;
+	line-height: 2rem;
+}
+
+.markdown.blog-post-content {
+	font-size: 1.0625;
+	line-height: 2rem;
+}
+
+.recent-articles {
+	margin-bottom: 0.8rem;
+}
+
