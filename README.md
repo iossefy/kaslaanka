@@ -3,7 +3,8 @@
 A minimalist theme for Hugo.
 
 this theme is a fork of [Hugo-tanka](https://github.com/nanxstats/hugo-tanka) theme.
-this theme is a "do it your self" theme, you probably want to change the css to make it your taste.
+
+this theme is a "do it yourself" theme, you probably want to change the css to make it your taste,
 use `custom.css` to do it.
 
 ## new features
@@ -91,7 +92,7 @@ languages:
 
 params:
   # it will produce: copyrights (c) 2022 joe
-  copytights: joe
+  copyrights: joe
   # path to the favicon directory
   # see ./layouts/_defaults/baseof.html line #30 to line #37
   faviconpath: "/img/favicon"
