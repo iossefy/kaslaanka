@@ -17,9 +17,9 @@
 				{{ .Pre }}
 				{{ .Name }}
 			  </a>
+			{{ if gt .Site.Languages 1 }}{{ partial "listlanguages" .}}{{end}}
 			</li>
 			{{ end }}
-			{{ if gt .Site.Languages 1 }}{{ partial "listlanguages" .}}{{end}}
 		  </ul>
 		</section>
 	  </div>
