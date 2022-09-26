@@ -2,12 +2,16 @@
 
 A minimalist theme for Hugo.
 
+__**Live**__ Demo at: [m1cr0xf7.github.io/kaslaanka](https://m1cr0xf7.github.io/kaslaanka/)
+
 this theme is a fork of [Hugo-tanka](https://github.com/nanxstats/hugo-tanka) theme.
 
 this theme is a "do it yourself" theme, you probably want to change the css to make it your taste,
 use `custom.css` to do it.
 
-__**Live**__ Demo at: [m1cr0xf7.github.io/kaslaanka](https://m1cr0xf7.github.io/kaslaanka/)
+
+![tn.png](https://github.com/M1cR0xf7/kaslaanka/blob/f568378ba9b2be2afa2db1cfbd36ad51d04348e6/images/tn.png?raw=true)
+
 
 ## new features
 
