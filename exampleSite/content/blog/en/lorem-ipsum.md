@@ -10,7 +10,7 @@ tags:
 ---
 
 
-<span class="first-letter">W</span>are you reading 🤣. lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+<span class="first-letter">W</span>hat are you reading 🤣. lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa
 tincidunt nunc pulvinar sapien et. Id interdum velit laoreet id donec
 ultrices. Cursus euismod quis viverra nibh cras pulvinar mattis
