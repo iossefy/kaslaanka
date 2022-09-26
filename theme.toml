@@ -3,6 +3,7 @@ license         = "GPL-v3"
 licenselink     = "https://github.com/M1cR0xf7/kaslaanka/blob/master/LICENSE"
 description     = "kaslaanka is a minimalist theme for Hugo"
 homepage        = "https://github.com/M1cR0xf7/kaslaanka"
+demosite	= "https://m1cr0xf7.github.io/kaslaanka"
 tags            = ["minimalist", "responsive", "typography", "customizable", "blog", "personal"]
 features        = ["Scriptless", "Responsive", "Minimal", "Clean", "Simple", "Minimalist", "Fast", "Customizable"]
 min_version     = "0.90.0"
