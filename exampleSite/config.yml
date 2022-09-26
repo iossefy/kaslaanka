@@ -41,6 +41,10 @@ languages:
     # contentDir: content/blog/
 
 params:
+  # you should change this
+  # or delete it with /layout/blog/single.html
+  # the latter is recommended
+  baseURL: "https://m1cr0xf7.github.io/kaslaanka/"
   sitename: "Kaslaanka Theme"
   # it will produce: copyrights (c) 2022 joe
   copyrights: John Doe

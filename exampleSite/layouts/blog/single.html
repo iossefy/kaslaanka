@@ -1,0 +1,68 @@
+{{ define "main" }}
+{{ partial "header" . }}
+<div class="content">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-lg-8">
+	<h1 class="mx-0 mx-md-4 blog-post-title">{{ .Title }}</h1>
+	<div class="meta-data meta">
+	  {{ if .Params.brief }}
+	  <div class="d-none d-md-inline meta-brief">
+	    {{ .Params.brief }}
+	  </div>
+	  {{ end }}
+	  {{ if not .Params.noauthor }}
+	  {{ if .Params.author }}
+	  <span class="author meta-data" title="{{ .Params.Author }}">
+	    {{ .Params.author }}
+	  </span>
+	  {{ end }}
+	  {{ end }}
+	  <span class="date middot meta-data" title='{{ .Date.Format "Mon Jan 2 2006 15:04:05 MST" }}'>
+	    {{ .Date.Format (.Site.Params.dateform | default "2006-01-02") }}
+	  </span>
+	  <span class="reading-time middot meta-data">
+	    {{ .ReadingTime }} min read
+	  </span>
+	  <a class="middot meta-data" href="{{ .Permalink | absURL }}">Permalink</a>
+	  <div class="d-none d-md-inline tags">
+	    <ul class="list-unstyled d-inline">
+	      {{ range .Params.tags}}
+	      <li class="d-inline" style="margin-right: 0.5rem">
+		<a href="{{ "tags/" | relLangURL }}{{ . | urlize }}">
+		  #{{ . }}
+		</a>
+	      </li>
+	      {{ end }}
+	    </ul>
+	  </div>
+	</div>
+	<div class="markdown blog-post-content">
+	  {{ partial "content" . }}
+	</div>
+	{{ if .Site.Params.posts_navigation }}
+	<div class="navigation">
+	  <div class="row">
+	    <div class="col-12 col-lg-6">
+	      {{ if .PrevInSection }}
+	      <div class="mx-0 mx-md-4 mt-4 text-left">
+		<a href="{{ .PrevInSection.Permalink }}">« {{ .PrevInSection.Title }}</a>
+	      </div>
+	      {{ end }}
+	    </div>
+	    <div class="col-12 col-lg-6">
+	      {{ if .NextInSection }}
+	      <div class="mx-0 mx-md-4 mt-4 text-right">
+		<a href="{{ .NextInSection.Permalink }}">{{ .NextInSection.Title }} »</a>
+	      </div>
+	      {{ end }}
+	    </div>
+	  </div>
+	</div>
+	{{ end }}
+      </div>
+      {{ partial "footer" . }}
+    </div>
+  </div>
+</div>
+{{ end }}
