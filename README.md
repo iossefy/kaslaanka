@@ -87,8 +87,23 @@ this post will be listed at /tags/hello/ and /tags/ok/
 
 ### config.yml
 ```yaml
-
 sitename: "Site Name!"
+baseURL: "/"
+languageCode: en-us
+title: "Kaslaanka Theme"
+author: John Doe
+
+enableEmoji: true
+hasCJKLanguage: false
+# You can change code highlight theme
+pygmentsstyle: "tango"
+pygmentscodefences: true
+
+# if you want to add html to your markdown
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
 
 # Links of the navbar
 menu:
@@ -96,8 +111,8 @@ menu:
     - name: Home
       url: /
       weight: 1
-    - name: About me
-      url: /aboutme
+    - name: About
+      url: /about
       weight: 2
     - name: Subscribe
       url: /index.xml
@@ -106,37 +121,41 @@ menu:
 # You can add languages!
 # do not expect it to work out of the box
 # https://gohugo.io/content-management/multilingual/
+defaultContentLanguage: en
 languages:
   en:
     LanguageName: English
+    # contentDir: content/english
   ru:
     LanguageName: русский
-    contentDir: content/blog/ru
+    # contentDir: content/russian
 
 params:
+  sitename: "Kaslaanka Theme"
   # it will produce: copyrights (c) 2022 joe
-  copyrights: joe
+  copyrights: John Doe
   # path to the favicon directory
   # see ./layouts/_defaults/baseof.html line #30 to line #37
-  faviconpath: "/img/favicon"
+#  faviconpath: "/img/favicon"
   # projects will show in the index page
   myprojects:
-    - name: AAAAA
-      description: BBBBBBB
+    - name: "Totally Awesome Project"
+      description: "Machine Learning Magic!!!"
       url: https://example.com
-    - name: XXXXXXXXXXXXXXX
-      description: YYYYYYYYYYYYYYYYYYY
-      url: https://example.com
+    - name: "Kaslaanka"
+      description: "The best hugo theme ever!!!"
+      url: https://github.com/M1cR0xf7/kaslaanka
   # link to more projects
   # show your github repositories as example
   # or create your own page.
-  projectsURL: https://github.com/<username>?tab=repositories
+  projectsURL: https://example.com
 
   # a brief about me
-  brief_about: hello there, its me <i>joe<i>.
+  brief_about: <center>Kaslaanka theme demo made with ❤️️</center>
 
 # and don't forget
 theme: kaslaanka
+
 ```
 
 ### posts
