@@ -31,6 +31,20 @@ use `custom.css` to do it.
 - **HUGE** first letter paragraph (if you want)
 - Brief description under blog post title
 
+
+### Installation
+
+inside the folder of your Hugo site, run:
+```shell
+git submodule add https://github.com/M1cR0xf7/kaslaanka.git themes/kaslaanka
+```
+
+For more information, read the official [setup guide](https://gohugo.io/getting-started/installing/) of Hugo.
+
+you should check out `exampleSite/`.
+
+## Customization
+
 ### custom.css
 
 add your custom css here `/static/css/custom.css`
@@ -41,6 +55,7 @@ add your custom css here `/static/css/custom.css`
 	font-family: "Roboto Serif";
 }
 ```
+
 
 ### custom.js
 add your custom javascript here `/static/js/custom.js`
