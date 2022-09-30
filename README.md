@@ -10,10 +10,17 @@ this theme is a "do it yourself" theme, you probably want to change the css to m
 use `custom.css` to do it.
 
 
-<!-- ![tn.png](https://github.com/M1cR0xf7/kaslaanka/blob/f568378ba9b2be2afa2db1cfbd36ad51d04348e6/images/tn.png?raw=true) -->
+![tn.png](https://github.com/M1cR0xf7/kaslaanka/blob/f568378ba9b2be2afa2db1cfbd36ad51d04348e6/images/tn.png?raw=true)
 
 ![screenshot.png](https://github.com/M1cR0xf7/kaslaanka/blob/master/images/screenshot.png?raw=true)
 
+
+## features
+- minimalist theme
+- easily customizable
+- easy to setup
+- does not need any javascript (javascript is optional)
+- works as a blog or/and a personal website
 
 ## new features
 
