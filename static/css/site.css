@@ -143,23 +143,23 @@ hr {
 	margin-right: 1.5rem;
 }
 
-
 .single-page-title {
 	font-weight: 400 !important;
 	/* text-transform: uppercase; */
 }
 
+.recent-articles {
+	margin-bottom: 0.8rem;
+}
+
 
 /* blog post typography */
-
 .content .blog-post-title {
 	font-size: 1.8rem;
 	line-height: 2.625rem;
 	font-weight: 400 !important;
 	/* text-transform: uppercase; */
 }
-
-
 
 .content .blog-post-content {
 	font-size: 1.0625rem;
