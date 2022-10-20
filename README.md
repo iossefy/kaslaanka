@@ -21,14 +21,16 @@ use `custom.css` to do it.
 - easy to setup
 - does not need any javascript (javascript is optional)
 - works as a blog or/and a personal website
+- gives you a space to be creative
 
-## new features
+### new features
 
 - remove the bloat (utterances comments, progressivly, highlight.js)
 - scriptless by default.
 - removed bootstrap.
 - changed how the index, single pages and blog posts look.
-- blog list on the home page is limited, if the users want to see more they go to /blog/
+- blog list on the home page is limited, if the users want to see more
+  they go to /blog/
 - listing projects on the home page.
 - brief about me on the home page.
 - support unlisted articles.
@@ -39,14 +41,15 @@ use `custom.css` to do it.
 - Brief description under blog post title
 
 
-### Installation
+## Installation
 
 inside the folder of your Hugo site, run:
 ```shell
 git submodule add https://github.com/M1cR0xf7/kaslaanka.git themes/kaslaanka
 ```
 
-For more information, read the official [setup guide](https://gohugo.io/getting-started/installing/) of Hugo.
+For more information, read the official
+[setup guide](https://gohugo.io/getting-started/installing/) of Hugo.
 
 you should check out `exampleSite/`.
 
@@ -80,7 +83,8 @@ you can add external scripts in `/layouts/partials/scripts.html`
 ```
 
 ### meta & link tags
-you can add as much `<meta>` and `<link>` as you like in `/layouts/partials/meta.html`
+you can add as much `<meta>` and `<link>` as you like in
+`/layouts/partials/meta.html`
 
 ### tags
 
@@ -187,5 +191,5 @@ brief: "This is my demo brief!"
 ---
 ```
 
-### LICENSE
+## LICENSE
 GPL-3.0 [LICENSE](./LICENSE).
