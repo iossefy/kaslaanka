@@ -2,47 +2,47 @@
 <html lang="{{ .Site.LanguageCode }}">
 
   <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>{{ block "title" . }}{{ if .IsHome }} {{ .Site.Title }} {{ else }} {{ .Title }} - {{ .Site.Title }} {{ end }}{{ end }}</title>
-	<meta name="HandheldFriendly" content="True">
-	<meta name="MobileOptimized" content="320">
-	<meta name="referrer" content="no-referrer">
-	<meta name="description" content="{{ .Description | default .Site.Params.description }}" />
-	<meta property="og:site_name" content="{{ .Site.Title }}" />
-	<meta property="og:locale" content="en_US" />
-	<meta property="og:type" content="article" />
-	<meta property="og:url" content="{{ .Permalink }}" />
-	<meta property="og:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}" />
-	<meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.meta_img | default .Site.Params.logofile }}" />
-	<meta property="og:description" content="{{ .Description | default .Site.Params.description }}" />
-	<meta name="twitter:card" content="{{ .Params.cardtype | default "summary_large_image" }}" />
-	{{ if .Site.Params.twitter }}
-	<meta name="twitter:site" content="@{{ .Site.Params.twitter }}">
-	<meta name="twitter:creator" content="@{{ .Site.Params.twitter }}">
-	{{ end }}
-	<meta name="twitter:title" content="{{ .Title | default .Site.Title }}" />
-	<meta name="twitter:description" content="{{ .Description | default .Site.Params.description }}" />
-	{{ partial "meta" . }}
-	<meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.meta_img | default .Site.Params.logofile }}" />
-	<link rel="canonical" href="{{ .Permalink }}">
-	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/site.css" />
-	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/custom.css" />
-	{{ if .Site.Params.faviconpath }}
-	<link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.Params.faviconpath }}/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.Params.faviconpath }}/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="{{ .Site.Params.faviconpath }}/favicon-16x16.png">
-	<link rel="manifest" href="{{ .Site.Params.faviconpath }}/site.webmanifest">
-	<meta name="msapplication-TileColor" content="#da532c">
-	<meta name="theme-color" content="#ffffff">
-	{{ end }}
-	{{ if .Site.RSSLink }}
-	<link href="{{ .Site.RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-	{{ end }}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ block "title" . }}{{ if .IsHome }} {{ .Site.Title }} {{ else }} {{ .Title }} - {{ .Site.Title }} {{ end }}{{ end }}</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="referrer" content="no-referrer">
+    <meta name="description" content="{{ .Description | default .Site.Params.description }}" />
+    <meta property="og:site_name" content="{{ .Site.Title }}" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}" />
+    <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.meta_img | default .Site.Params.logofile }}" />
+    <meta property="og:description" content="{{ .Description | default .Site.Params.description }}" />
+    <meta name="twitter:card" content="{{ .Params.cardtype | default "summary_large_image" }}" />
+    {{ if .Site.Params.twitter }}
+    <meta name="twitter:site" content="@{{ .Site.Params.twitter }}">
+    <meta name="twitter:creator" content="@{{ .Site.Params.twitter }}">
+    {{ end }}
+    <meta name="twitter:title" content="{{ .Title | default .Site.Title }}" />
+    <meta name="twitter:description" content="{{ .Description | default .Site.Params.description }}" />
+    {{ partial "meta" . }}
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.meta_img | default .Site.Params.logofile }}" />
+    <link rel="canonical" href="{{ .Permalink }}">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/site.css" />
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/custom.css" />
+    {{ if .Site.Params.faviconpath }}
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.Params.faviconpath }}/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.Params.faviconpath }}/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ .Site.Params.faviconpath }}/favicon-16x16.png">
+    <link rel="manifest" href="{{ .Site.Params.faviconpath }}/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    {{ end }}
+    {{ if .Site.RSSLink }}
+    <link href="{{ .Site.RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+    {{ end }}
   </head>
 
   <body>
-	{{ block "main" . }}{{ end }}
+    {{ block "main" . }}{{ end }}
   </body>
 
 </html>

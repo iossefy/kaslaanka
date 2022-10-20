@@ -1,13 +1,13 @@
 <ul class="list-unstyled" >
   <li>
-	<h4 class="meta-title">
-	  <a href="{{ .Permalink }}">{{ .Title }}</a>
-	  <time class="meta-data middot">
-		{{ .Date.Format (.Site.Params.dateform | default "2006/01/02") }}
-	  </time>
-	  <span class="meta-data middot">
-		{{ range .Params.tags }} #{{.}} {{end}}
-	  </span>
-	</h4>
+    <h4 class="meta-title">
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      <time class="meta-data middot">
+	{{ .Date.Format (.Site.Params.dateform | default "2006/01/02") }}
+      </time>
+      <span class="meta-data middot">
+	{{ range .Params.tags }} #{{.}} {{end}}
+      </span>
+    </h4>
   </li>
 </ul>

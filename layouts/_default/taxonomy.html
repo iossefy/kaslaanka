@@ -2,29 +2,29 @@
 {{ partial "header" . }}
 <div class="content">
   <div class="container">
-	<div class="row justify-content-center">
-	  <div class="col-sm-12 col-lg-8">
-		<div class="mx-0 mx-md-4">
-		  <h2>#{{ .Title }}</h2>
-		  <hr>
-		  {{ if eq .Title "Tags" }}
-		  <ul style="list-style: disclosure-closed">
-			{{ range .Site.Taxonomies.tags }}
-			<li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
-			{{ end }}
-		  </ul>
-		  {{ end }}
-		  <ul>
-			{{ range .Data.Pages.ByPublishDate }}
-			{{ if .Params.tags}}
-			{{ partial "tag" . }}
-			{{ end }}
-			{{ end }}
-		  </ul>
-		</div>
-	  </div>
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-lg-8">
+	<div class="mx-0 mx-md-4">
+	  <h2>#{{ .Title }}</h2>
+	  <hr>
+	  {{ if eq .Title "Tags" }}
+	  <ul style="list-style: disclosure-closed">
+	    {{ range .Site.Taxonomies.tags }}
+	    <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
+	    {{ end }}
+	  </ul>
+	  {{ end }}
+	  <ul>
+	    {{ range .Data.Pages.ByPublishDate }}
+	    {{ if .Params.tags}}
+	    {{ partial "tag" . }}
+	    {{ end }}
+	    {{ end }}
+	  </ul>
 	</div>
+      </div>
+    </div>
   </div>
-{{ partial "footer" . }}
+  {{ partial "footer" . }}
 </div>
 {{ end }}

@@ -7,11 +7,11 @@
 <!-- or use javascript... no -->
 <div class="container">
   <span class="row justify-content-center meta" id="footer">
-	Copyright ©
-	<!-- <span class="col-auto justify-content-center meta" id="footer" style="white-space:nowrap"> -->
-	  {{ now.Year }}
-	  <!-- </span> -->
-	{{ .Site.Params.copyrights }}
+    Copyright ©
+    <!-- <span class="col-auto justify-content-center meta" id="footer" style="white-space:nowrap"> -->
+      {{ now.Year }}
+      <!-- </span> -->
+    {{ .Site.Params.copyrights }}
   </span>
   <script defer src="{{.Site.BaseURL}}js/custom.js"></script>
   {{ partial "scripts" . }}

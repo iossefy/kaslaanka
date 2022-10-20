@@ -3,12 +3,12 @@
   {{ range $i, $p := (where .Data.Pages.ByDate.Reverse ".Params.unlisted" "!=" "true") }}
   {{ if le $i  5 }}
   <li class="recent-articles">
-	<h4 class="meta-title">
-	  <a href="{{ .Permalink }}">{{ .Title }}</a>
-	</h4>
-	<div class="meta-date">
-	  <time class="meta-data">{{ .Date.Format (.Site.Params.dateform | default "2006/01/02") }}</time>
-	</div>
+    <h4 class="meta-title">
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </h4>
+    <div class="meta-date">
+      <time class="meta-data">{{ .Date.Format (.Site.Params.dateform | default "2006/01/02") }}</time>
+    </div>
   </li>
   {{ end }}
   {{ end }}

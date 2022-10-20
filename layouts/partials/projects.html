@@ -1,11 +1,11 @@
 <ul class="list-unstyled">
   <li>
-	{{ range .Site.Params.myprojects }}
-	<div class="meta-title">
-	  <a href="{{ .url }}">{{ .name }}</a>:
-	  {{ .description }}
-	</div>
-	{{ end }}
+    {{ range .Site.Params.myprojects }}
+    <div class="meta-title">
+      <a href="{{ .url }}">{{ .name }}</a>:
+      {{ .description }}
+    </div>
+    {{ end }}
   </li>
 </ul>
 </div>

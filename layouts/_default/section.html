@@ -3,27 +3,27 @@
 
 <div class="content">
   <div class="container">
-	<div class="row justify-content-center">
-	  <div class="col-sm-12 col-lg-8">
-		<div class="markdown">
-		  {{ partial "content" . }}
-		</div>
-
-		<div class="mx-0 mx-md-4 posts">
-		  <ul>
-			{{ range sort .Pages "Title" "asc" }}
-			<li>
-			  <a href="{{ .Permalink }}">
-				<span>{{ .Title }}</span>
-			  </a>
-			</li>
-			{{ end }}
-		  </ul>
-		</div>
-	  </div>
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-lg-8">
+	<div class="markdown">
+	  {{ partial "content" . }}
 	</div>
 
-{{ partial "footer" . }}
+	<div class="mx-0 mx-md-4 posts">
+	  <ul>
+	    {{ range sort .Pages "Title" "asc" }}
+	    <li>
+	      <a href="{{ .Permalink }}">
+		<span>{{ .Title }}</span>
+	      </a>
+	    </li>
+	    {{ end }}
+	  </ul>
+	</div>
+      </div>
+    </div>
+
+    {{ partial "footer" . }}
   </div>
 </div>
 
