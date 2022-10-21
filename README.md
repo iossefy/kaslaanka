@@ -43,15 +43,28 @@ use `custom.css` to do it.
 
 ## Installation
 
-inside the folder of your Hugo site, run:
+Install hugo using the
+[setup guide](https://gohugo.io/getting-started/installing/).
+
+Create a new Hugo site
+```shell
+hugo new site .
+```
+
+add the theme to your Hugo site
 ```shell
 git submodule add https://github.com/M1cR0xf7/kaslaanka.git themes/kaslaanka
 ```
 
-For more information, read the official
-[setup guide](https://gohugo.io/getting-started/installing/) of Hugo.
+use the theme by adding this line in your config file
 
-you should check out `exampleSite/`.
+```toml
+theme = 'kaslaanka'
+```
+
+you should check out `exampleSite/`. don't copy it fully, there are
+some workaround used in `layouts/blog/` to deploy on github pages,
+please ignore it.
 
 ## Customization
 
