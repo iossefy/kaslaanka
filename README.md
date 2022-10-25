@@ -177,6 +177,9 @@ params:
   # a brief about me
   brief_about: <center>Kaslaanka theme demo made with ❤️️</center>
 
+  # articles archive url (default)
+  archive: blog
+
 # and don't forget
 theme: kaslaanka
 

@@ -22,7 +22,7 @@
 	  {{ end }}
 	  <div class="container">
 	    <span class="justify-content-center row col-auto mx-0 chunk-sm">
-	      <a class="col-auto more-links justify-content-center text-center" href="{{ .Permalink }}blog/">
+	      <a class="col-auto more-links justify-content-center text-center" href="{{ .Permalink }}{{ if .Site.Params.archive }}{{ .Site.Params.archive }}{{ else }}blog{{ end }}">
 		More articles
 	      </a>
 	    </span>
