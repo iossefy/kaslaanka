@@ -1000,3 +1000,21 @@ th, td {
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
+
+
+.float-right { float: right !important; }
+.float-left  { float: left  !important; }
+
+aside {
+    width: 40%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+}
+
+aside > p {
+    margin: .5rem;
+}
