@@ -17,7 +17,7 @@
 		<a href="{{ .Permalink }}">{{ .Title }}</a>
 	      </h2>
 	      <div class="meta-data">
-		<time>{{ .Date.Format (.Site.Params.dateform | default "2006/01/02") }}</time>
+		<time class="meta-data">{{ .Date.Format (.Site.Params.dateform | default "2006/01/02") }}</time>
 		<span class="meta-data middot">
 		  {{ range .Params.tags }} #{{.}} {{end}}
 		</span>
