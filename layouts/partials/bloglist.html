@@ -1,6 +1,5 @@
-
 <ul class="list-unstyled">
-  {{ range $i, $p := (where .Data.Pages.ByDate.Reverse ".Params.unlisted" "!=" "true") }}
+  {{ range $i, $p := (where  (where .Data.Pages.ByDate.Reverse "Section" "blog") ".Params.unlisted" "!=" "true") }}
   {{ if le $i  5 }}
   <li class="recent-articles">
     <h4 class="meta-title">

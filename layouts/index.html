@@ -17,7 +17,7 @@
 	  <!-- a work-around for a problem i don't know what causes it -->
 	  {{ range .Data.Pages.GroupByDate "2006" "desc"}}
 	  {{ range sort .Pages "Date" "desc" }}
-	  {{ partial "list" . }}
+	  {{ partial "bloglist" . }}
 	  {{ end }}
 	  {{ end }}
 	  <div class="container">
