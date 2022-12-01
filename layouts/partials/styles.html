@@ -1,0 +1,3 @@
+    {{- $sitecss := resources.Get "css/site.css" | resources.Minify }}
+    <link rel="stylesheet" href="{{ $sitecss.RelPermalink }}" />
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/custom.css" />

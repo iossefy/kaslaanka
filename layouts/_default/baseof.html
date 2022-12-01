@@ -26,8 +26,7 @@
     {{ partial "meta" . }}
     <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.meta_img | default .Site.Params.logofile }}" />
     <link rel="canonical" href="{{ .Permalink }}">
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/site.css" />
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/custom.css" />
+    {{ partial "styles" . }}
     {{ if .Site.Params.faviconpath }}
     <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.Params.faviconpath }}/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.Params.faviconpath }}/favicon-32x32.png">
