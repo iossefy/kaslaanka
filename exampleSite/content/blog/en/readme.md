@@ -60,14 +60,18 @@ Install hugo using the
 [setup guide](https://gohugo.io/getting-started/installing/).
 
 Create a new Hugo site
-```shell
+<pre>
+
 hugo new site .
-```
+
+</pre>
 
 add the theme to your Hugo site
-```shell
+<pre>
+
 git submodule add https://github.com/M1cR0xf7/kaslaanka.git themes/kaslaanka
-```
+
+</pre>
 
 use the theme by adding this line in your config file
 
@@ -202,21 +206,17 @@ theme: kaslaanka
 
 you can make a post unlisted by adding the following
 
-```markdown
----
+```yaml
 
 unlisted: true
 
----
 ```
 
 add a brief description to a single blog page.
 
-```markdown
----
+```yaml
 
 brief: "This is my demo brief!"
 
----
 ```
 
