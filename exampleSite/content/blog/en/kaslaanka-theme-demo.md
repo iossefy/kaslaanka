@@ -204,22 +204,6 @@ int main() {
 </pre>
 
 
-## Buttons
-
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-light">Light</button>
-<button type="button" class="btn btn-dark">Dark</button>
-
-<button type="button" class="btn btn-outline btn-outline-success">Success</button>
-<button type="button" class="btn btn-outline btn-outline-danger">Danger</button>
-<button type="button" class="btn btn-outline btn-outline-warning">Warning</button>
-<button type="button" class="btn btn-outline btn-outline-info">Info</button>
-<button type="button" class="btn btn-outline btn-outline-light">Light</button>
-<button type="button" class="btn btn-outline btn-outline-dark">Dark</button>
-
 ## Alerts
 
 <!-- <div class="alert alert-primary" role="alert"> -->
