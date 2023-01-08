@@ -9,11 +9,11 @@
 	</div>
 	<hr>
 	<div class="mx-0 chunk-sm posts">
-	  <span class="row recent-articles">
+	  <div class="row recent-articles">
 	    <h4 class="justify-content-center some-weight col-auto" style="margin-bottom: 0px;">
 	      Recent articles
 	    </h4>
-	  </span>
+	  </div>
 	  {{ range .Data.Pages.GroupByDate "2006" "desc"}}
 	  {{ range sort .Pages "Date" "desc" }}
 	  {{ partial "bloglist" . }}
@@ -30,13 +30,12 @@
 	<hr>
 	{{ if .Site.Params.myprojects }}
 	<div class="chunk-sm posts">
-	  <span class="row">
+	  <div class="row">
 	    <h4 class="justify-content-center some-weight col-auto" style="margin-bottom: 1rem">Projects</h4>
-	  </span>
+	  </div>
 	  <div>
 	    {{ partial "projects" . }}
 	  </div>
-
 	  {{ if .Site.Params.projectsURL}}
 	  <div class="container">
 	    <span class="justify-content-center row col-auto mx-0 chunk-sm"  style="padding-top: 1.2rem">
