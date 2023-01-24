@@ -10,13 +10,18 @@
 	<hr>
 	<div class="mx-0 chunk-sm posts">
 	  <div class="row recent-articles">
-	    <h4 class="justify-content-center some-weight col-auto" style="margin-bottom: 0px;">
-	      Recent articles
-	    </h4>
+	    <h4 class="justify-content-center some-weight col-auto" style="margin-bottom: 0px;">Recent articles</h4>
 	  </div>
-	  {{ range .Data.Pages.GroupByDate "2006" "desc"}}
-	  {{ range sort .Pages "Date" "desc" }}
+	  {{ range .Data.Pages.GroupByDate "2006" "desc" }}
+	  {{ range (sort .Pages "Date" "desc") }}
+	  {{/* Hard coded. :FIXME: */}}
+	  {{ if eq $.Site.Params.defaultList "blog" }}
 	  {{ partial "bloglist" . }}
+	  {{ else if eq $.Site.Params.defaultList "global" }}
+	  {{ partial "globallist" . }}
+	  {{ else }}
+	  {{ partial "globallist" . }}
+	  {{ end }}
 	  {{ end }}
 	  {{ end }}
 	  <div class="container">
