@@ -158,6 +158,15 @@ params:
   sitename: "Kaslaanka Theme"
   # it will produce: copyrights (c) 2022 joe
   copyrights: John Doe
+  # set default homepage list (what section to list pages from)
+  # default: global
+  # currently available options (global, blog)
+  defaultList: global
+  # list 3 items of every section
+  # you can use a section specific list
+  # to list n items of that section.
+  # see ./layouts/partials/bloglist.html for example
+  paginationLen: 3
   # path to the favicon directory
   # see ./layouts/_defaults/baseof.html line #30 to line #37
 #  faviconpath: "/img/favicon"
@@ -182,7 +191,6 @@ params:
 
 # and don't forget
 theme: kaslaanka
-
 ```
 
 ### posts
