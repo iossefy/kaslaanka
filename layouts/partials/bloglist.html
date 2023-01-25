@@ -3,7 +3,7 @@
   {{ with ($.Site.Params.paginationLen) }}
   {{ $length = $.Site.Params.paginationLen }}
   {{ end }}
-  {{ range $i, $p := first $.Site.Params.paginationLen (where  (where .Data.Pages.ByDate.Reverse "Section" "blog") ".Params.unlisted" "!=" true) }}
+  {{ range $i, $p := first $length (where  (where .Data.Pages.ByDate.Reverse "Section" "blog") ".Params.unlisted" "!=" true) }}
   <li class="recent-articles">
     <h4 class="meta-title">
       <a href="{{ .Permalink }}">{{ .Title }}</a>
