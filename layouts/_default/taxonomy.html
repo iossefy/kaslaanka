@@ -14,13 +14,11 @@
 	    {{ end }}
 	  </ul>
 	  {{ end }}
-	  <ul>
-	    {{ range .Data.Pages.ByPublishDate }}
-	    {{ if .Params.tags}}
-	    {{ partial "tag" . }}
-	    {{ end }}
-	    {{ end }}
-	  </ul>
+	  {{ range .Data.Pages.ByPublishDate }}
+	  {{ if .Params.tags }}
+	  {{ partial "tag" . }}
+	  {{ end }}
+	  {{ end }}
 	</div>
       </div>
     </div>
