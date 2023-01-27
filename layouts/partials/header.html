@@ -9,7 +9,7 @@
 	</div>
       </div>
       <div class="row justify-content-center">
-	<section class="nav  justify-content-center">
+	<div class="nav justify-content-center">
 	  <ul>
 	    {{ range .Site.Menus.primary.ByWeight }}
 	    <li class="nav-item justify-content-center mx-auto"> <!--FUCKING HELL-->
@@ -21,7 +21,7 @@
 	    {{ end }}
 	    {{ if gt .Site.Languages 1 }}{{ partial "listlanguages" .}}{{end}}
 	  </ul>
-	</section>
+	</div>
       </div>
     </div>
   </header>
