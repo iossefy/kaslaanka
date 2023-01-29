@@ -24,6 +24,11 @@
 	  <span class="reading-time middot meta-data">
 	    {{ .ReadingTime }} min read
 	  </span>
+	  {{ if .Params.edits }}
+	  <span class="middot meta-data">
+	    edit count: {{ .Params.edits }}
+	  </span>
+	  {{ end }}
 	  {{ if .Params.unlisted }}
 	  <span class="middot meta-data">
 	    unlisted

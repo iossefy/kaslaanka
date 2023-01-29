@@ -215,5 +215,17 @@ brief: "This is my demo brief!"
 ---
 ```
 
+if you want to add an edit counter, see `edit` in the front matter.
+you increment it every time you edit the post.  where `3` is the
+number of edits.
+
+```yaml
+---
+
+edits: 3
+
+---
+```
+
 ## LICENSE
 GPL-3.0 [LICENSE](./LICENSE).
