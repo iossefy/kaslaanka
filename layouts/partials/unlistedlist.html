@@ -2,15 +2,23 @@
   {{ $length := 5 }}
   {{ with ($.Site.Params.paginationLen) }}
   {{ $length = $.Site.Params.paginationLen }}
-  {{ end}}
+  {{ end }}
   {{ range $n, $p := first $length (where .Data.Pages.ByDate.Reverse ".Params.unlisted" "==" true) }}
   <li class="recent-articles">
     <h4 class="meta-title">
       <a href="{{ .Permalink }}">{{ .Title }}</a>
     </h4>
     <div class="meta-date">
-	<span class="meta-data">[ {{ .Section }} ]</span>
-	<time class="meta-data middot" datetime="{{ .Date.Format (.Site.Params.dateform | default "2006-01-02") }}">{{ .Date.Format (.Site.Params.dateform | default "2006/01/02") }}</time>
+      <span class="meta-data">
+	{{ if .Params.categories }}
+	[ {{ delimit .Params.categories ", " }} ]
+	{{ else }}
+	[ {{ .Section }} ]
+	{{ end }}
+      </span>
+      <time class="meta-data middot" datetime="{{ .Date.Format (.Site.Params.dateform | default "2006-01-02") }}">
+	{{ .Date.Format (.Site.Params.dateform | default "2006/01/02") }}
+      </time>
   </li>
   {{ end }}
 </ul>

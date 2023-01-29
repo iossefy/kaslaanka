@@ -14,9 +14,31 @@
 	    {{ end }}
 	  </ul>
 	  {{ end }}
+	  {{ if eq .Title "Categories" }}
+	  <ul style="list-style: disclosure-closed">
+	    {{ range .Site.Taxonomies.categories }}
+	    <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
+	    {{ end }}
+	  </ul>
+	  {{ end }}
+	  {{ $tagtitle := .Title }}
+	  {{ $cattitle := .Title }}
 	  {{ range .Data.Pages.ByPublishDate }}
 	  {{ if .Params.tags }}
+	  {{ if in .Page.Permalink "/tags/" }}
 	  {{ partial "tag" . }}
+	  {{ end }}
+	  {{ if in .Params.tags $tagtitle }}
+	  {{ partial "tag" . }}
+	  {{ end }}
+	  {{ if .Params.categories }}
+	  {{ if in .Page.Permalink "/categories/" }}
+	  {{ partial "categories" . }}
+	  {{ end }}
+	  {{ if in .Params.categories $cattitle }}
+	  {{ partial "categories" . }}
+	  {{ end }}
+	  {{ end }}
 	  {{ end }}
 	  {{ end }}
 	</div>

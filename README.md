@@ -15,7 +15,7 @@ use `custom.css` to do it.
 ![screenshot.png](https://github.com/M1cR0xf7/kaslaanka/blob/master/images/screenshot.png?raw=true)
 
 
-## features
+## Description
 - minimalist theme
 - easily customizable
 - easy to setup
@@ -36,6 +36,7 @@ use `custom.css` to do it.
 - support unlisted articles.
 - better favicons.
 - better tags
+- add categories
 - add multiple languages support
 - **HUGE** first letter paragraph (if you want)
 - Brief description under blog post title
@@ -107,6 +108,12 @@ tags:
   - ok
 ```
 
+### categories
+```yaml
+categories:
+  - travel
+```
+
 this post will be listed at /tags/hello/ and /tags/ok/
 
 ### config.yml
@@ -169,7 +176,7 @@ params:
   paginationLen: 3
   # path to the favicon directory
   # see ./layouts/_defaults/baseof.html line #30 to line #37
-#  faviconpath: "/img/favicon"
+  # faviconpath: "/img/favicon"
   # projects will show in the index page
   myprojects:
     - name: "Totally Awesome Project"
@@ -185,9 +192,6 @@ params:
 
   # a brief about me
   brief_about: <center>Kaslaanka theme demo made with ❤️️</center>
-
-  # articles archive url (default)
-  archive: blog
 
 # and don't forget
 theme: kaslaanka

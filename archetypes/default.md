@@ -8,5 +8,7 @@ unlisted: false
 tags:
   - "one tag"
   - "another tag"
+categories:
+  - "one category"
 description: "Description for the page"
 ---

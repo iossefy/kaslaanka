@@ -14,14 +14,7 @@
 	  </div>
 	  {{ range .Data.Pages.GroupByDate "2006" "desc" }}
 	  {{ range (sort .Pages "Date" "desc") }}
-	  {{/* Hard coded. :FIXME: */}}
-	  {{ if eq $.Site.Params.defaultList "blog" }}
-	  {{ partial "bloglist" . }}
-	  {{ else if eq $.Site.Params.defaultList "global" }}
 	  {{ partial "globallist" . }}
-	  {{ else }}
-	  {{ partial "globallist" . }}
-	  {{ end }}
 	  {{ end }}
 	  {{ end }}
 	  <div class="container">

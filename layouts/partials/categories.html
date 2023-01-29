@@ -14,9 +14,11 @@
       <time class="meta-data middot" datetime="{{ .Date.Format (.Site.Params.dateform | default "2006-01-02") }}">
 	{{ .Date.Format (.Site.Params.dateform | default "2006/01/02") }}
       </time>
+      {{ with .Params.tags }}
       <span class="meta-data middot">
-	{{ range .Params.tags }} #{{.}} {{end}}
+	{{ range . }} #{{.}} {{end}}
       </span>
+      {{ end }}
     </div>
   </li>
 </ul>
