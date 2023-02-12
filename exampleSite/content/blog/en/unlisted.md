@@ -10,4 +10,4 @@ categories:
     - fun
 ---
 
-Or are they? [Check this out](/blog/hidden)
+Or are they? [Check this out](/blog/en/hidden)

@@ -3,6 +3,8 @@ title: "Hidden Post?"
 author: "John Doe"
 date: "2023-02-11T12:00:00"
 
+unlisted: true
+
 ---
 
 Yes.
