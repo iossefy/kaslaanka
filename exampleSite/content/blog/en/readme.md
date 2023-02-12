@@ -5,7 +5,7 @@ date: "2022-09-22T12:00:00"
 brief: "The README.md of github at the time of writing."
 
 categories:
-	- travel
+    - travel
 
 tags:
     - readme
