@@ -107,6 +107,7 @@ tags:
   - hello
   - ok
 ```
+this post will be listed at /tags/hello/ and /tags/ok/
 
 ### categories
 ```yaml
@@ -114,7 +115,7 @@ categories:
   - travel
 ```
 
-this post will be listed at /tags/hello/ and /tags/ok/
+this post will be listed at /categories/travel/
 
 ### config.yml
 ```yaml
