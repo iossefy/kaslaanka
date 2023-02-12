@@ -4,12 +4,14 @@ author: "John Doe"
 date: "2022-09-22T12:00:00"
 brief: "The README.md of github at the time of writing."
 
+categories:
+	- travel
+
 tags:
     - readme
     - Demo
     - Markdown-Show
 ---
-
 
 # Kaslaanka
 
@@ -27,8 +29,7 @@ use `custom.css` to do it.
 
 ![screenshot.png](https://github.com/M1cR0xf7/kaslaanka/blob/master/images/screenshot.png?raw=true)
 
-
-## features
+## Description
 - minimalist theme
 - easily customizable
 - easy to setup
@@ -49,6 +50,7 @@ use `custom.css` to do it.
 - support unlisted articles.
 - better favicons.
 - better tags
+- add categories
 - add multiple languages support
 - **HUGE** first letter paragraph (if you want)
 - Brief description under blog post title
@@ -60,18 +62,14 @@ Install hugo using the
 [setup guide](https://gohugo.io/getting-started/installing/).
 
 Create a new Hugo site
-<pre>
-
+```shell
 hugo new site .
-
-</pre>
+```
 
 add the theme to your Hugo site
-<pre>
-
+```shell
 git submodule add https://github.com/M1cR0xf7/kaslaanka.git themes/kaslaanka
-
-</pre>
+```
 
 use the theme by adding this line in your config file
 
@@ -126,6 +124,13 @@ tags:
 
 this post will be listed at /tags/hello/ and /tags/ok/
 
+### categories
+```yaml
+categories:
+  - travel
+```
+this post will be listed at /categories/travel/.
+
 ### config.yml
 ```yaml
 sitename: "Site Name!"
@@ -175,9 +180,18 @@ params:
   sitename: "Kaslaanka Theme"
   # it will produce: copyrights (c) 2022 joe
   copyrights: John Doe
+  # set default homepage list (what section to list pages from)
+  # default: global
+  # currently available options (global, blog)
+  defaultList: global
+  # list 3 items of every section
+  # you can use a section specific list
+  # to list n items of that section.
+  # see ./layouts/partials/bloglist.html for example
+  paginationLen: 3
   # path to the favicon directory
   # see ./layouts/_defaults/baseof.html line #30 to line #37
-#  faviconpath: "/img/favicon"
+  # faviconpath: "/img/favicon"
   # projects will show in the index page
   myprojects:
     - name: "Totally Awesome Project"
@@ -194,29 +208,44 @@ params:
   # a brief about me
   brief_about: <center>Kaslaanka theme demo made with ❤️️</center>
 
-  # articles archive url (default)
-  archive: blog
-
 # and don't forget
 theme: kaslaanka
-
 ```
 
 ### posts
 
 you can make a post unlisted by adding the following
 
-```yaml
+```markdown
+---
 
 unlisted: true
 
+---
 ```
 
 add a brief description to a single blog page.
 
-```yaml
+```markdown
+---
 
 brief: "This is my demo brief!"
 
+---
 ```
+
+if you want to add an edit counter, see `edit` in the front matter.
+you increment it every time you edit the post.  where `3` is the
+number of edits.
+
+```yaml
+---
+
+edits: 3
+
+---
+```
+
+## LICENSE
+GPL-3.0 [LICENSE](./LICENSE).
 
