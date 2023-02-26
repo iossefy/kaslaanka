@@ -54,14 +54,72 @@ hugo new site .
 
 add the theme to your Hugo site
 ```shell
+# first initialise your repository with git
+git init
+# then fetch the theme and put it inside themes/ directory
 git submodule add https://github.com/M1cR0xf7/kaslaanka.git themes/kaslaanka
 ```
 
-use the theme by adding this line in your config file
+use the theme by adding this line in your config (`config.toml`) file
 
 ```toml
 theme = 'kaslaanka'
 ```
+
+to get your site ready add the following params to your config:
+
+```
+[params]
+sitename = "Kaslaanka Theme"
+copyrights = "John Doe"
+defaultList = "global"
+paginationLen = 3
+projectsURL = "https://example.com"
+brief_about = "<center>Kaslaanka theme demo made with ❤️️</center>"
+```
+run this in your terminal to see progress:
+```shell
+hugo serve
+```
+it usually serves on `http://localhost:1313/`. Now you've are half way there.
+
+Let's add some of our awesome projects to the homepage. add the following under `[params]`
+```toml
+[[params.myprojects]]
+name = "Totally Awesome Project"
+description = "Machine Learning Magic!!!"
+url = "https://example.com"
+
+[[params.myprojects]]
+name = "Kaslaanka"
+description = "The best hugo theme ever!!!"
+url = "https://github.com/M1cR0xf7/kaslaanka"
+```
+
+Let's add some nav links:
+
+```toml
+[[menu.primary]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.primary]]
+name = "About"
+url = "/about"
+weight = 2
+
+[[menu.primary]]
+name = "Subscribe"
+url = "/index.xml"
+weight = 3
+```
+
+Now you are done installing the theme.  Read [Hugo's
+documentation](https://gohugo.io/documentation/) and continue your
+journey. i will use `yaml` to write the rest of the README, it's easy
+to convert between them, just use whatever you like. Check out
+[config.yml](#configyml) annotated with comments.
 
 you should check out `exampleSite/`. don't copy it fully, there are
 some workaround used in `layouts/blog/` to deploy on github pages,
@@ -197,6 +255,64 @@ params:
 # and don't forget
 theme: kaslaanka
 ```
+
+### config.toml
+```toml
+sitename = "Site Name!"
+baseURL = "/"
+languageCode = "en-us"
+title = "Kaslaanka Theme"
+author = "John Doe"
+enableEmoji = true
+hasCJKLanguage = false
+pygmentsstyle = "tango"
+pygmentscodefences = true
+defaultContentLanguage = "en"
+theme = "kaslaanka"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[[menu.primary]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.primary]]
+name = "About"
+url = "/about"
+weight = 2
+
+[[menu.primary]]
+name = "Subscribe"
+url = "/index.xml"
+weight = 3
+
+[languages.en]
+LanguageName = "English"
+
+[languages.ru]
+LanguageName = "русский"
+
+[params]
+sitename = "Kaslaanka Theme"
+copyrights = "John Doe"
+defaultList = "global"
+paginationLen = 3
+projectsURL = "https://example.com"
+brief_about = "<center>Kaslaanka theme demo made with ❤️️</center>"
+
+  [[params.myprojects]]
+  name = "Totally Awesome Project"
+  description = "Machine Learning Magic!!!"
+  url = "https://example.com"
+
+  [[params.myprojects]]
+  name = "Kaslaanka"
+  description = "The best hugo theme ever!!!"
+  url = "https://github.com/M1cR0xf7/kaslaanka"
+```
+
 
 ### posts
 
