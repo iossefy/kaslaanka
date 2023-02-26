@@ -68,7 +68,7 @@ theme = 'kaslaanka'
 
 to get your site ready add the following params to your config:
 
-```
+```toml
 [params]
 sitename = "Kaslaanka Theme"
 copyrights = "John Doe"
