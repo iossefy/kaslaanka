@@ -965,6 +965,8 @@ ul li {
 .btn-dark    { background-color: #555555; } /* Black */
 
 .btn-outline {
+    border-style: solid;
+    border-radius: .7rem;
     background-color: #fff;
     color: #000;
 }
