@@ -318,7 +318,7 @@ brief_about = "<center>Kaslaanka theme demo made with ❤️️</center>"
 
 you can make a post unlisted by adding the following
 
-```markdown
+```yaml
 ---
 
 unlisted: true
@@ -328,7 +328,7 @@ unlisted: true
 
 add a brief description to a single blog page.
 
-```markdown
+```yaml
 ---
 
 brief: "This is my demo brief!"
