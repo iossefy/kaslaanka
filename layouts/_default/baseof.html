@@ -8,20 +8,20 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="referrer" content="no-referrer">
-    <meta property="og:site_name" content="{{ .Site.Title }}" />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    <meta property="og:locale" content="en_US">
 
     {{ template "_internal/opengraph.html" . }}
 
-    <meta name="twitter:card" content="{{ .Params.cardtype | default "summary_large_image" }}" />
+    <meta name="twitter:card" content="{{ .Params.cardtype | default "summary_large_image" }}">
     {{ if .Site.Params.twitter }}
     <meta name="twitter:site" content="@{{ .Site.Params.twitter }}">
     <meta name="twitter:creator" content="@{{ .Site.Params.twitter }}">
     {{ end }}
-    <meta name="twitter:title" content="{{ .Title | default .Site.Title }}" />
-    <meta name="twitter:description" content="{{ .Description | default .Site.Params.description }}" />
+    <meta name="twitter:title" content="{{ .Title | default .Site.Title }}">
+    <meta name="twitter:description" content="{{ .Description | default .Site.Params.description }}">
     {{ partial "meta" . }}
-    <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.meta_img | default .Site.Params.logofile }}" />
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.meta_img | default .Site.Params.logofile }}">
     <link rel="canonical" href="{{ .Permalink }}">
     {{ partial "styles" . }}
     {{ if .Site.Params.faviconpath }}
@@ -34,7 +34,7 @@
     {{ end }}
 
     {{- with .OutputFormats.Get "rss" -}}
-    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end -}}
 
   </head>
