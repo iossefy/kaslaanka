@@ -2,7 +2,7 @@ sitename: "Site Name!"
 baseURL: "/"
 languageCode: en-us
 title: "Kaslaanka Theme"
-author: m1cr0xf7
+author: iossefy
 
 enableEmoji: true
 hasCJKLanguage: false
@@ -44,7 +44,7 @@ params:
   # you should change this
   # or delete it with /layout/blog/single.html
   # the latter is recommended
-  baseURL: "https://m1cr0xf7.github.io/kaslaanka/"
+  baseURL: "https://iossefy.github.io/kaslaanka/"
   sitename: "Kaslaanka Theme"
   # it will produce: copyrights (c) 2022 joe
   copyrights: John Doe
@@ -58,7 +58,7 @@ params:
       url: https://example.com
     - name: "Kaslaanka"
       description: "The best hugo theme ever!!!"
-      url: https://github.com/M1cR0xf7/kaslaanka
+      url: https://github.com/Iossefy/kaslaanka
   # link to more projects
   # show your github repositories as example
   # or create your own page.
