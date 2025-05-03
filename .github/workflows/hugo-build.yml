@@ -2,11 +2,8 @@
 name: Deploy Hugo site to Pages
 
 on:
-  # Trigger on pushes to the default branch
   push:
     branches: ["master"]
-
-  # Allow manual trigger from GitHub UI
   workflow_dispatch:
 
 permissions:
@@ -14,7 +11,6 @@ permissions:
   pages: write
   id-token: write
 
-# Ensure only one deployment at a time, but let ongoing ones finish gracefully
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -27,8 +23,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.147.1  # Stick to your preferred Hugo version
-
+      HUGO_VERSION: 0.147.1
     steps:
       - name: Install Hugo CLI
         run: |
@@ -48,7 +43,10 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Install Node.js dependencies
-        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+        run: |
+          if [ -f package-lock.json ] || [ -f npm-shrinkwrap.json ]; then
+            npm ci
+          fi
 
       - name: Build with Hugo
         env:
