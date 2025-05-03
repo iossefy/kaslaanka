@@ -6,7 +6,7 @@ homepage        = "https://github.com/Iossefy/kaslaanka"
 demosite	= "https://iossefy.github.io/kaslaanka"
 tags            = ["minimalist", "responsive", "typography", "customizable", "blog", "personal"]
 features        = ["Scriptless", "Responsive", "Minimal", "Clean", "Simple", "Minimalist", "Fast", "Customizable"]
-min_version     = "0.117.0"
+min_version     = "v0.147.1"
 
 [author]
   name          = "Youssef Hesham"
